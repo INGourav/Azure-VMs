@@ -309,8 +309,8 @@ foreach($subscription in $Subscriptions)  
                             Az_Memory = $VMMem 
                             Az_OSType = $virtualmachine.StorageProfile.OsDisk.OsType 
                             Az_VM_Offer = $virtualmachine.StorageProfile.ImageReference.Offer
-							Az_VM_Sku = $virtualmachine.StorageProfile.ImageReference.sku
-			                Az_VNicNames = $NICName -join "`n" 
+			    Az_VM_Sku = $virtualmachine.StorageProfile.ImageReference.sku
+			    Az_VNicNames = $NICName -join "`n" 
                             Az_VNicProvisioningState = $NICProvState -join "`n" 
                             Az_VNicPrivateIPs = $NICPrivateIP -join "`n" 
                             Az_vNicPrivateIPAllocMethods = $NICPrivateAllocationMethod -join "`n" 
@@ -324,9 +324,9 @@ foreach($subscription in $Subscriptions)  
                             Az_OSDiskSize = $OSDiskSize
                             Az_OSDiskTier = $OSDiskTier  
                             Az_OSDiskRepl = $OSDiskRepl 
-							Az_VM_DiagnosticsUri = $virtualmachine.DiagnosticsProfile.BootDiagnostics.StorageUri
-							Az_VM_Admin_User = $virtualmachine.OSProfile.AdminUsername
-							Az_VM_Computer_Name = $virtualmachine.OSProfile.ComputerName
+			    Az_VM_DiagnosticsUri = $virtualmachine.DiagnosticsProfile.BootDiagnostics.StorageUri
+			    Az_VM_Admin_User = $virtualmachine.OSProfile.AdminUsername
+			    Az_VM_Computer_Name = $virtualmachine.OSProfile.ComputerName
                             Az_DataDisks = $DataDiskObj.Name -join "`n" 
                             Az_DataDisksHCache = $DataDiskObj.HostCache -join "`n" 
                             Az_DataDisksSize = $DataDiskObj.Size -join "`n" 
